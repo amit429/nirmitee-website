@@ -1,32 +1,23 @@
-import React, {useState} from 'react';
+import React from 'react';
 import { Link, withRouter, NavLink } from 'react-router-dom';
-
 import logo from '../../assets/images/logo.png';
-<<<<<<< HEAD
-=======
  
 
 
 class Navigation extends React.Component {
->>>>>>> dd95fa6c585237ea2711455a8edcc00ddf6ee589
 
-const Navigation=()=>{
-    const [collapsed, setCollapsed] = useState(true);
-    const [open, setOpen] = useState(false);
-    toggleNavbar=()=>{
-        setCollapsed(!collapsed);
+    state = {
+        collapsed: true,
+        isOpen: false
+    };
+
+    toggleNavbar = () => {
+        this.setState({
+            collapsed: !this.state.collapsed,
+        });
     }
 
-    toggleOpen=()=>{
-        setOpen(!open);
-    }
-    
-    onRouteChanged=()=>{
-        setOpen(!open);
-    }
-
-
-    componentDidMount=()=> {
+    componentDidMount() {
         let elementId = document.getElementById("navbar");
         document.addEventListener("scroll", () => {
             if (window.scrollY > 170) {
@@ -38,14 +29,22 @@ const Navigation=()=>{
         });
         window.scrollTo(0, 0);
     }
-    componentDidUpdate=(nextProps)=> {
+
+    toggleOpen = () => this.setState({ isOpen: !this.state.isOpen });
+
+    componentDidUpdate(nextProps) {
         if (this.props.match.path !== nextProps.match.path) {
             // this.onRouteChanged();
             console.log('OK')
         }
     }
 
+    onRouteChanged = () => {
+        this.setState({ isOpen: !this.state.isOpen });
+    }
 
+    render(){
+        const { collapsed } = this.state;
         const classOne = collapsed ? 'collapse navbar-collapse' : 'collapse navbar-collapse show';
         const classTwo = collapsed ? 'navbar-toggler navbar-toggler-right collapsed' : 'navbar-toggler navbar-toggler-right';
         const menuClass = `dropdown-menu${this.state.isOpen ? " show" : ""}`;
@@ -414,7 +413,7 @@ const Navigation=()=>{
 
                                             <li className="nav-item">
                                                 <NavLink 
-                                                    to="/faculty" 
+                                                    to="/schedule-2" 
                                                     className="nav-link" 
                                                     onClick={this.toggleNavbar}
                                                 >
@@ -545,24 +544,8 @@ const Navigation=()=>{
                     </nav>
                 </div>
             </header>
-export default withRouter(Navigation);
-    
-
-
-
-
-// class Navigation extends React.Component {
-
-//     state = {
-//         collapsed: true,
-//         isOpen: false
-//     };
-
-   
-
-
-//     render(){
-        
-//     }
-// }
+        );
+    }
+}
  
+export default withRouter(Navigation);
