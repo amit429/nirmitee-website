@@ -403,7 +403,7 @@ class Navigation extends React.Component {
                                         <ul className={menuClass}>
                                             <li className="nav-item">
                                                 <NavLink 
-                                                    to="/schedule-1" 
+                                                    to="/student" 
                                                     className="nav-link" 
                                                     onClick={this.toggleNavbar}
                                                 >
