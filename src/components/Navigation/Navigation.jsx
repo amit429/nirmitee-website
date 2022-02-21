@@ -2,6 +2,13 @@ import React, {useState} from 'react';
 import { Link, withRouter, NavLink } from 'react-router-dom';
 
 import logo from '../../assets/images/logo.png';
+<<<<<<< HEAD
+=======
+ 
+
+
+class Navigation extends React.Component {
+>>>>>>> dd95fa6c585237ea2711455a8edcc00ddf6ee589
 
 const Navigation=()=>{
     const [collapsed, setCollapsed] = useState(true);
@@ -397,7 +404,7 @@ const Navigation=()=>{
                                         <ul className={menuClass}>
                                             <li className="nav-item">
                                                 <NavLink 
-                                                    to="/schedule-1" 
+                                                    to="/student" 
                                                     className="nav-link" 
                                                     onClick={this.toggleNavbar}
                                                 >
