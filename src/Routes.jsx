@@ -31,6 +31,7 @@ import BlogFour from "./components/pages/BlogFour";
 import BlogDetails from "./components/pages/BlogDetails";
 import Sponsor from "./components/pages/Sponsor";
 import Student from "./components/team/student";
+import Faculty from "./components/team/faculty";
 
 // Conditionally render Navigation
 const renderNavigation = () => {
@@ -74,6 +75,7 @@ const AppRouter = () => {
                 <Route path="/sponsors" exact component={Sponsor} />
                 <Route path="/error-404" exact component={NotFound} />
                 <Route path="/student" exact component={Student}/>
+                <Route path="/faculty" exact component={Faculty}/>
                 <Route component={NotFound} />
             </Switch>
         </Router>

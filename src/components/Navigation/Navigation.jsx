@@ -413,7 +413,7 @@ class Navigation extends React.Component {
 
                                             <li className="nav-item">
                                                 <NavLink 
-                                                    to="/schedule-2" 
+                                                    to="/faculty" 
                                                     className="nav-link" 
                                                     onClick={this.toggleNavbar}
                                                 >
