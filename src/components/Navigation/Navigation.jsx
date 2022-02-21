@@ -140,7 +140,7 @@ class Navigation extends React.Component {
                                             onClick={this.toggleOpen} 
                                             className="nav-link"
                                         >
-                                            Pages
+                                            Page
                                         </Link>
                                         
                                         <ul className={menuClass}>
