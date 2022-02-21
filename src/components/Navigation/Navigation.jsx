@@ -1,21 +1,25 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { Link, withRouter, NavLink } from 'react-router-dom';
+
 import logo from '../../assets/images/logo.png';
- 
-class Navigation extends React.Component {
 
-    state = {
-        collapsed: true,
-        isOpen: false
-    };
-
-    toggleNavbar = () => {
-        this.setState({
-            collapsed: !this.state.collapsed,
-        });
+const Navigation=()=>{
+    const [collapsed, setCollapsed] = useState(true);
+    const [open, setOpen] = useState(false);
+    toggleNavbar=()=>{
+        setCollapsed(!collapsed);
     }
 
-    componentDidMount() {
+    toggleOpen=()=>{
+        setOpen(!open);
+    }
+    
+    onRouteChanged=()=>{
+        setOpen(!open);
+    }
+
+
+    componentDidMount=()=> {
         let elementId = document.getElementById("navbar");
         document.addEventListener("scroll", () => {
             if (window.scrollY > 170) {
@@ -27,22 +31,14 @@ class Navigation extends React.Component {
         });
         window.scrollTo(0, 0);
     }
-
-    toggleOpen = () => this.setState({ isOpen: !this.state.isOpen });
-
-    componentDidUpdate(nextProps) {
+    componentDidUpdate=(nextProps)=> {
         if (this.props.match.path !== nextProps.match.path) {
             // this.onRouteChanged();
             console.log('OK')
         }
     }
 
-    onRouteChanged = () => {
-        this.setState({ isOpen: !this.state.isOpen });
-    }
 
-    render(){
-        const { collapsed } = this.state;
         const classOne = collapsed ? 'collapse navbar-collapse' : 'collapse navbar-collapse show';
         const classTwo = collapsed ? 'navbar-toggler navbar-toggler-right collapsed' : 'navbar-toggler navbar-toggler-right';
         const menuClass = `dropdown-menu${this.state.isOpen ? " show" : ""}`;
@@ -542,8 +538,24 @@ class Navigation extends React.Component {
                     </nav>
                 </div>
             </header>
-        );
-    }
-}
- 
 export default withRouter(Navigation);
+    
+
+
+
+
+// class Navigation extends React.Component {
+
+//     state = {
+//         collapsed: true,
+//         isOpen: false
+//     };
+
+   
+
+
+//     render(){
+        
+//     }
+// }
+ 
