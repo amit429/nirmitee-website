@@ -14,11 +14,10 @@ class WhyUs extends React.Component {
 
                     <div className="col-lg-4 col-md-6 p-0">
                         <div className="why-choose-content">
-                            <h3>Great Speakers</h3>
-                            <p>Donec sed odio dui. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donecullamcorper nulla non metus auctor fringilla.</p>
-                            <Link to="#">
-                                Know More <i className="icofont-long-arrow-right"></i>
-                            </Link>
+                         
+                            <p>.Reimagining Civil Engineering through the eyes of Nirmitee<br/>
+.A podium igniting intellectual thoughts</p>
+                           
 
                             <span>01</span>
                         </div>
@@ -32,12 +31,10 @@ class WhyUs extends React.Component {
 
                     <div className="col-lg-4 col-md-6 p-0">
                         <div className="why-choose-content">
-                            <h3>Networking</h3>
-                            <p>Donec sed odio dui. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donecullamcorper nulla non metus auctor fringilla.</p>
-                            <Link to="#">
-                                Know More <i className="icofont-long-arrow-right"></i>
-                            </Link>
-
+                            
+                            <p>.Not just an event, but an expression of euphoria<br/>
+.Create, Enhance and Sustain</p>
+                           
                             <span>02</span>
                         </div>
                     </div>
@@ -50,12 +47,11 @@ class WhyUs extends React.Component {
 
                     <div className="col-lg-4 col-md-6 p-0">
                         <div className="why-choose-content">
-                            <h3>Have Fun</h3>
-                            <p>Donec sed odio dui. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donecullamcorper nulla non metus auctor fringilla.</p>
-                            <Link to="#">
-                                Know More <i className="icofont-long-arrow-right"></i>
-                            </Link>
-
+                            <p>.An Exquisite Odyssey<br/>
+As we walk through all the ups and downs that life has to offer, we tend to seek solace in the springs.
+ For, with springs comes NIRMITEE
+</p>
+                           
                             <span>03</span>
                         </div>
                     </div>
