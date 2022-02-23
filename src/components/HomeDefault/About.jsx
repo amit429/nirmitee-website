@@ -39,7 +39,7 @@ class About extends React.Component {
 
                                 
 
-                                <Link to="/about-3" className="btn btn-primary">
+                                <Link to="/about-2" className="btn btn-primary">
                                     Read More 
                                     <i className="icofont-double-right"></i>
                                 </Link>
@@ -56,7 +56,7 @@ class About extends React.Component {
 
                                 <img src={require("../../assets/images/shapes/5.png")} className="shape-img" alt="about" />
 
-                                <LaxButton buttonText="Explore More About" />
+                               <Link to="/about-2"> <LaxButton buttonText="Explore More About" /></Link>
                             </div>
                         </div>
                     </div>
