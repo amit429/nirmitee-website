@@ -14,10 +14,10 @@ class WhyUs extends React.Component {
                                         <div className="icon">
                                             <i className="icofont-headphone-alt-1"></i>
                                         </div>
-                                        <h3>Great Speakers</h3>
-                                        <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                                        <h3>Our Vision</h3>
+                                        <p> Reimagining Civil Engineering through the eyes of Nirmitee.</p>
             
-                                        <Link to="#" className="btn btn-primary">Register Now</Link>
+                                        <Link to="/blog-1" className="btn btn-primary">Register Now</Link>
                                     </div>
                                 </div>
                             </div>
@@ -33,9 +33,10 @@ class WhyUs extends React.Component {
                                             <i className="icofont-network-tower"></i>
                                         </div>
                                         <h3>Networking</h3>
-                                        <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                                        <p>Nirmitee is a stellar opportunity that brings together civil enthusiasts for showcasing their 
+                                            talent and improving their abilities to the very best degree.</p>
             
-                                        <Link to="#" className="btn btn-primary">Register Now</Link>
+                                        <Link to="/blog-1" className="btn btn-primary">Register Now</Link>
                                     </div>
                                 </div>
                             </div>
@@ -51,9 +52,11 @@ class WhyUs extends React.Component {
                                             <i className="icofont-users-social"></i>
                                         </div>
                                         <h3>New People</h3>
-                                        <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                                        <p>Over 4000 students participate and fanatics are\
+                                             fostered via adroit fellows of the civil zone and teaching faculty of 150 various 
+                                             colleges from throughout India. </p>
             
-                                        <Link to="#" className="btn btn-primary">Register Now</Link>
+                                        <Link to="/blog-1" className="btn btn-primary">Register Now</Link>
                                     </div>
                                 </div>
                             </div>
@@ -69,9 +72,10 @@ class WhyUs extends React.Component {
                                             <i className="icofont-wink-smile"></i>
                                         </div>
                                         <h3>Competitions</h3>
-                                        <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                                        <p>Nirmitee has evolved to be a platform for global interaction over the years. The deluge of competitions that this event hosts presents
+                                             both- raw, undiscovered talents and pro-shows.  </p>
             
-                                        <Link to="#" className="btn btn-primary">Register Now</Link>
+                                        <Link to="/blog-1" className="btn btn-primary">Register Now</Link>
                                     </div>
                                 </div>
                             </div>

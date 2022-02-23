@@ -854,7 +854,7 @@ class EventSchedules extends React.Component {
 
                         <div className="col-lg-12">
                             <div className="btn-box">
-                                <Link to="#" className="btn btn-primary">Download Schedule (PDF)</Link>
+                                <Link to="#" className="btn btn-primary">Download Event Rule-Book (PDF)</Link>
                                 <Link to="#" className="btn btn-secondary">Connect Via Instagram</Link>
                             </div>
                         </div>
