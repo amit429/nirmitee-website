@@ -27,7 +27,6 @@ const Login = () => {
     } catch (err) {
       alert(err.response.data.msg);
     }
-    alert("Logged In");
   };
   return (
     <section className="login-area">
@@ -93,22 +92,5 @@ const Login = () => {
     </section>
   );
 };
-
-// class Login extends React.Component {
-//     state = {
-//         email: '',
-//         password: ''
-//         //logged in
-//     };
-
-//     onSubmit = (e) => {
-//         e.preventDefault();
-//         //check login
-//     }
-
-//     render(){
-
-//     }
-// }
 
 export default Login;

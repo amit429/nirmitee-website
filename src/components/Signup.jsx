@@ -1,14 +1,14 @@
 import React from "react";
 import { useState } from "react";
 import axios from "axios";
-// import { Link } from "react-router-dom";
-// import { FormControl,Form } from 'react-bootstrap';
+import { Link } from "react-router-dom";
+import { FormControl,Form } from 'react-bootstrap';
 
 const Signup = () => {
   const [user, setUser] = useState({
     username: "",
     email: "",
-    mobile: "",
+    mobileno: "",
     event: "",
   });
 
@@ -21,7 +21,7 @@ const Signup = () => {
   const registerSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("https://nirmitee-backend.herokuapp.com/user/payment", {
+      await axios.post("https://nirmitee-backend.herokuapp.com/user/register", {
         ...user,
       });
 
@@ -53,18 +53,17 @@ const Signup = () => {
                 >
                   Name
                 </label>
-                <input
-                  type="text"
-                  name="username"
-                  className="form-control"
-                  placeholder="Name"
-                  style={{
-                    textAlign: "left",
-                  }}
-                  value={user.username}
-                  onChange={onChangeInput}
-                  autoComplete="off"
-                />
+               <input
+                type="text"
+                name="username"
+                className="form-control"
+                placeholder="Name"
+                style={{
+                  textAlign: "left",
+                }}
+                value={user.name}
+                onChange={onChangeInput}
+               />
               </div>
 
               <div className="form-group">
@@ -85,7 +84,6 @@ const Signup = () => {
                   placeholder="Email Address"
                   value={user.email}
                   onChange={onChangeInput}
-                  autoComplete="on"
                 />
               </div>
 
@@ -99,46 +97,41 @@ const Signup = () => {
                 </label>
                 <input
                   type="text"
-                  name="mobile"
+                  name="mobileno"
                   style={{
                     textAlign: "left",
                   }}
                   className="form-control"
                   placeholder="Number"
-                  value={user.mobile}
+                  value={user.mobileno}
                   onChange={onChangeInput}
                 />
               </div>
 
               <div className="form-group">
-                <select
-                  id="cars"
-                  name="event"
-                  style={{
-                    marginLeft: "30px",
-                    paddingLeft: "40px",
-                    paddingRight: "40px",
-                    paddingTop: "20px",
-                    paddingBottom: "20px",
-                  }}
-                  value={user.event}
-                  onChange={onChangeInput}
-                >
-                  <option value="Default">Select Event</option>
-                  <option value="Event 1">event 1</option>
-                  <option value="Event 2">event 2</option>
-                  <option value="Event 3">event 3</option>
-                  <option value="Event 4">event 4</option>
-                </select>
-                <label
-                  style={{
-                    marginLeft: "10px",
-                  }}
-                >
-                  : Registered Event Name
-                </label>
-              </div>
-
+               
+               <select id="cars" name="event" style={{
+                 marginLeft: "30px",
+                 paddingLeft: "40px",
+                 paddingRight: "40px",
+                 paddingTop: "20px",
+                 paddingBottom: "20px",
+               }}>
+             <option value="volvo">event 1</option>
+             <option value="saab">event 2</option>
+             <option value="fiat">event 3</option>
+             <option value="audi">event 4</option>
+           </select>
+           <label
+                 style={{
+                   marginLeft: "10px",
+                 }}
+               >
+                  : Registered Event Name  
+               </label>
+             </div>
+                
+                
               <button type="submit" className="btn btn-primary">
                 Save Details
               </button>
