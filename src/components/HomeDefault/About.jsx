@@ -30,11 +30,16 @@ class About extends React.Component {
                                 <h2>At Nirmitee We Create and <b>Turn It</b> Into Reality</h2>
                                 <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
                                 
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                                <p>Nirmitee from its day one gives the platform to all civil maniacs to showcase their 
+                                    brilliance, knowledge, and skills to their highest calibre. The diverse range of 
+                                    competitions from technical to non-technical such as CV-Cruits, Technoquiz, Ryla,
+                                     Pitchhunt, e-tendering, Mindbend avails to evaluate participants competence level and 
+                                     ascertain their logical skills 
+</p>
 
                                 
 
-                                <Link to="/about-3" className="btn btn-primary">
+                                <Link to="/about-2" className="btn btn-primary">
                                     Read More 
                                     <i className="icofont-double-right"></i>
                                 </Link>
@@ -51,7 +56,7 @@ class About extends React.Component {
 
                                 <img src={require("../../assets/images/shapes/5.png")} className="shape-img" alt="about" />
 
-                                <LaxButton buttonText="Explore More About" />
+                               <Link to="/about-2"> <LaxButton buttonText="Explore More About" /></Link>
                             </div>
                         </div>
                     </div>

@@ -70,7 +70,7 @@ class MainBanner extends React.Component {
                                     </ul>
 
                                     <div className="button-box">
-                                        <Link to="#" className="btn btn-primary">!Register Now</Link>
+                                        <Link to="/blog-1" className="btn btn-primary">!Register Now</Link>
                                         <Link 
                                             onClick={e => {e.preventDefault(); this.openModal()}}
                                             to="#" 
