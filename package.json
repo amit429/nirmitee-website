@@ -8,6 +8,7 @@
         "http-proxy-middleware": "^0.19.2",
         "isomorphic-fetch": "^2.2.1",
         "lax.js": "^1.2.5",
+        "razorpay": "^2.8.0",
         "react": "^17.0.2",
         "react-accessible-accordion": "^3.3.4",
         "react-countup": "^4.4.0",
